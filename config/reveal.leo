@@ -211,7 +211,7 @@ vertical: body pane on the botton</t>
     &lt;a href="https://revealjs.com"&gt;
         &lt;img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"&gt;
     &lt;/a&gt;
-    &lt;h3&gt;40823224&lt;/h3&gt;
+    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
     &lt;p&gt;
         &lt;small&gt;Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; and &lt;a href="https://github.com/hakimel/reveal.js/graphs/contributors"&gt;contributors&lt;/a&gt;&lt;/small&gt;
     &lt;/p&gt;
@@ -236,7 +236,6 @@ vertical: body pane on the botton</t>
     &lt;h2&gt;Slides&lt;/h2&gt;
     &lt;p&gt;
         Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at &lt;a href="https://slides.com" target="_blank"&gt;https://slides.com&lt;/a&gt;.
-        
     &lt;/p&gt;
 &lt;/section&gt;
 
