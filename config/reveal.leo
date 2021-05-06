@@ -207,17 +207,15 @@ vertical: body pane on the botton</t>
 &lt;div class="slides"&gt;
     @others
 &lt;/div&gt;</t>
-<t tx="leo.20200818170328.1">&lt;section&gt;
-    &lt;a href="https://revealjs.com"&gt;
-        &lt;img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"&gt;
-    &lt;/a&gt;
-    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+<t tx="leo.20200818170328.1">&lt;section data-transition="slide" data-background="#003060" data-background-transition="zoom"&gt;
+    &lt;h1&gt;CD2021&lt;/h1&gt;
+    &lt;h1&gt;協同產品設計實習&lt;/h1&gt;
+    &lt;h2&gt;stage3-bg2&lt;/h2&gt;
+    &lt;h3&gt;stage&lt;/h3&gt;
     &lt;p&gt;
-        &lt;small&gt;Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; and &lt;a href="https://github.com/hakimel/reveal.js/graphs/contributors"&gt;contributors&lt;/a&gt;&lt;/small&gt;
+        &lt;small&gt;Created by&lt;a href="https://github.com/40823217/cd2021"&gt;40823217莊子靖&lt;/a&gt;、&lt;a href="https://github.com/40823201/cd2021"&gt;40823201陳品喬&lt;/a&gt;、&lt;a href="https://github.com/40823209/cd2021"&gt;40823209顏沐恩&lt;/a&gt;、&lt;a href="https://github.com/40823210/cd2021"&gt;40823210李柏諺&lt;/a&gt;、 &lt;a href="https://github.com/40823206/cd2021"&gt;40823206鄭郁潔&lt;/a&gt;、&lt;a href="https://github.com/40823207/cd2021"&gt;40823207張書鳳&lt;/a&gt;、&lt;a href="https://github.com/40823223/cd2021"&gt;40823223梁恆誌&lt;/a&gt;、&lt;a href="https://github.com/40823224/cd2021"&gt;40823224蕭君亦&lt;/a&gt;&lt;/small&gt;
     &lt;/p&gt;
-&lt;/section&gt;
-
-</t>
+&lt;/section&gt;</t>
 <t tx="leo.20200818170535.1">&lt;section&gt;
     &lt;h2&gt;Hello There&lt;/h2&gt;
     &lt;p&gt;
