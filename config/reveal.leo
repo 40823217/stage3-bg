@@ -214,12 +214,8 @@ vertical: body pane on the botton</t>
 &lt;/div&gt;
 </t>
 <t tx="leo.20200818170328.1">&lt;section&gt;
-   &lt;h1&gt;協同產品設計實習2021&lt;/h1&gt;
-   &lt;h2&gt;Stage1-bg9&lt;/h9&gt;
-   &lt;p&gt;
-   &lt;small&gt;Teammate&lt;a href="https://github.com/40823217/stage1-bg9"&gt;40823217&lt;/a&gt;and&lt;a href="https://github.com/40823201/stage1-bg9"&gt;40823201&lt;/a&gt;&lt;/small&gt;
-    &lt;/p&gt;
- &lt;/section&gt;
+    &lt;p&gt;123&lt;/p&gt;
+&lt;/section&gt;
 </t>
 <t tx="leo.20200818170535.1"></t>
 <t tx="leo.20200818170636.1">    @others
@@ -252,21 +248,19 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200818195323.1"></t>
 <t tx="leo.20200818195339.1"></t>
 <t tx="leo.20200818195403.1">&lt;section data-transition="slide" data-background="#b5533c" data-background-transition="zoom"&gt;
-&lt;h2&gt;專題名稱:免彎腰販賣機&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;img caption="false" height="500" src="./../images/自動販賣機(組合).png" width="700
-"&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;h2&gt;Background Transitions&lt;/h2&gt;
+    &lt;p&gt;
+        You can override background transitions per-slide.
+    &lt;/p&gt;
+    &lt;pre&gt;&lt;code class="hljs html" style="word-wrap: break-word;"&gt;&amp;lt;section data-background-transition="zoom"&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
 
-&lt;section data-transition="slide" data-background="#b5533c" data-background-transition="zoom"&gt;
-&lt;h2&gt;設計動機&lt;/h2&gt;
 </t>
-<t tx="leo.20200818195426.1">&lt;p&gt;思考到一些老人、行動不便者、受傷的人可能無法彎腰去拿取物品，
-
-所以我們將商品出口設置在右側中間。當我們買完商品時，商品即會掉落於斜面，
-
-且滾動至右側平台，而當平台偵測到重量，平台就會上升至出口處，
-
-購買者即可不必彎腰就可以拿去商品。&lt;/p&gt;
+<t tx="leo.20200818195426.1">&lt;section data-background-iframe="https://hakim.se" data-background-interactive&gt;
+    &lt;div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;"&gt;
+        &lt;h2&gt;Iframe Backgrounds&lt;/h2&gt;
+        &lt;p&gt;Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.&lt;/p&gt;
+    &lt;/div&gt;
 &lt;/section&gt;
 
 </t>
@@ -282,18 +276,18 @@ vertical: body pane on the botton</t>
 
 </t>
 <t tx="leo.20200818195502.1">&lt;section&gt;
-                 &lt;h2&gt;Fantastic Ordered List&lt;/h2&gt;
-                 &lt;ol&gt;
+    &lt;h2&gt;Fantastic Ordered List&lt;/h2&gt;
+    &lt;ol&gt;
         &lt;li&gt;One is smaller than...&lt;/li&gt;
         &lt;li&gt;Two is smaller than...&lt;/li&gt;
         &lt;li&gt;Three!&lt;/li&gt;
-                 &lt;/ol&gt;
-             &lt;/section&gt;
+    &lt;/ol&gt;
+&lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195520.1">             &lt;section&gt;
-                 &lt;h2&gt;Tabular Tables&lt;/h2&gt;
-                 &lt;table&gt;
+<t tx="leo.20200818195520.1">&lt;section&gt;
+    &lt;h2&gt;Tabular Tables&lt;/h2&gt;
+    &lt;table&gt;
         &lt;thead&gt;
             &lt;tr&gt;
                 &lt;th&gt;Item&lt;/th&gt;
@@ -318,95 +312,95 @@ vertical: body pane on the botton</t>
                 &lt;td&gt;2&lt;/td&gt;
             &lt;/tr&gt;
         &lt;/tbody&gt;
-                 &lt;/table&gt;
-             &lt;/section&gt;
+    &lt;/table&gt;
+&lt;/section&gt;
 </t>
-<t tx="leo.20200818195541.1">             &lt;section&gt;
-                 &lt;h2&gt;Clever Quotes&lt;/h2&gt;
-                 &lt;p&gt;
+<t tx="leo.20200818195541.1">&lt;section&gt;
+    &lt;h2&gt;Clever Quotes&lt;/h2&gt;
+    &lt;p&gt;
         These guys come in two forms, inline: &lt;q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"&gt;The nice thing about standards is that there are so many to choose from&lt;/q&gt; and block:
-                 &lt;/p&gt;
-                 &lt;blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"&gt;
+    &lt;/p&gt;
+    &lt;blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"&gt;
         &amp;ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
         reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&amp;rdquo;
-                 &lt;/blockquote&gt;
-             &lt;/section&gt;
+    &lt;/blockquote&gt;
+&lt;/section&gt;
 </t>
-<t tx="leo.20200818195604.1">             &lt;section&gt;
-                 &lt;h2&gt;Intergalactic Interconnections&lt;/h2&gt;
-                 &lt;p&gt;
+<t tx="leo.20200818195604.1">&lt;section&gt;
+    &lt;h2&gt;Intergalactic Interconnections&lt;/h2&gt;
+    &lt;p&gt;
         You can link between slides internally,
         &lt;a href="#/2/3"&gt;like this&lt;/a&gt;.
-                 &lt;/p&gt;
-             &lt;/section&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195625.1">             &lt;section&gt;
-                 &lt;h2&gt;Speaker View&lt;/h2&gt;
-                 &lt;p&gt;There's a &lt;a href="https://revealjs.com/speaker-view/"&gt;speaker view&lt;/a&gt;. It includes a timer, preview of the upcoming slide as well as your speaker notes.&lt;/p&gt;
-                 &lt;p&gt;Press the &lt;em&gt;S&lt;/em&gt; key to try it out.&lt;/p&gt;
+<t tx="leo.20200818195625.1">&lt;section&gt;
+    &lt;h2&gt;Speaker View&lt;/h2&gt;
+    &lt;p&gt;There's a &lt;a href="https://revealjs.com/speaker-view/"&gt;speaker view&lt;/a&gt;. It includes a timer, preview of the upcoming slide as well as your speaker notes.&lt;/p&gt;
+    &lt;p&gt;Press the &lt;em&gt;S&lt;/em&gt; key to try it out.&lt;/p&gt;
 
-                 &lt;aside class="notes"&gt;
+    &lt;aside class="notes"&gt;
         Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-                 &lt;/aside&gt;
-             &lt;/section&gt;
+    &lt;/aside&gt;
+&lt;/section&gt;
 </t>
-<t tx="leo.20200818195643.1">             &lt;section&gt;
-                 &lt;h2&gt;Export to PDF&lt;/h2&gt;
-                 &lt;p&gt;Presentations can be &lt;a href="https://revealjs.com/pdf-export/"&gt;exported to PDF&lt;/a&gt;, here's an example:&lt;/p&gt;
+<t tx="leo.20200818195643.1">&lt;section&gt;
+    &lt;h2&gt;Export to PDF&lt;/h2&gt;
+    &lt;p&gt;Presentations can be &lt;a href="https://revealjs.com/pdf-export/"&gt;exported to PDF&lt;/a&gt;, here's an example:&lt;/p&gt;
     &lt;iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt;
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195701.1">             &lt;section&gt;
-                 &lt;h2&gt;Global State&lt;/h2&gt;
-                 &lt;p&gt;
+<t tx="leo.20200818195701.1">&lt;section&gt;
+    &lt;h2&gt;Global State&lt;/h2&gt;
+    &lt;p&gt;
         Set &lt;code&gt;data-state="something"&lt;/code&gt; on a slide and &lt;code&gt;"something"&lt;/code&gt;
         will be added as a class to the document element when the slide is open. This lets you
         apply broader style changes, like switching the page background.
-                 &lt;/p&gt;
-             &lt;/section&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195715.1">             &lt;section data-state="customevent"&gt;
-                 &lt;h2&gt;State Events&lt;/h2&gt;
-                 &lt;p&gt;
+<t tx="leo.20200818195715.1">&lt;section data-state="customevent"&gt;
+    &lt;h2&gt;State Events&lt;/h2&gt;
+    &lt;p&gt;
         Additionally custom events can be triggered on a per slide basis by binding to the &lt;code&gt;data-state&lt;/code&gt; name.
-                 &lt;/p&gt;
-                 &lt;pre&gt;&lt;code class="javascript" data-trim contenteditable style="font-size: 18px;"&gt;
-             Reveal.on( 'customevent', function() {
-             console.log( '"customevent" has fired' );
+    &lt;/p&gt;
+    &lt;pre&gt;&lt;code class="javascript" data-trim contenteditable style="font-size: 18px;"&gt;
+Reveal.on( 'customevent', function() {
+console.log( '"customevent" has fired' );
 } );
     &lt;/code&gt;&lt;/pre&gt;
-             &lt;/section&gt;
+&lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195731.1">             &lt;section&gt;
-                 &lt;h2&gt;Take a Moment&lt;/h2&gt;
-                 &lt;p&gt;
+<t tx="leo.20200818195731.1">&lt;section&gt;
+    &lt;h2&gt;Take a Moment&lt;/h2&gt;
+    &lt;p&gt;
         Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-                 &lt;/p&gt;
-             &lt;/section&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195748.1">             &lt;section&gt;
-                 &lt;h2&gt;Much more&lt;/h2&gt;
-                 &lt;ul&gt;
+<t tx="leo.20200818195748.1">&lt;section&gt;
+    &lt;h2&gt;Much more&lt;/h2&gt;
+    &lt;ul&gt;
         &lt;li&gt;Right-to-left support&lt;/li&gt;
         &lt;li&gt;&lt;a href="https://revealjs.com/api/"&gt;Extensive JavaScript API&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="https://revealjs.com/auto-slide/"&gt;Auto-progression&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="https://revealjs.com/backgrounds/#parallax-background"&gt;Parallax backgrounds&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="https://revealjs.com/keyboard/"&gt;Custom keyboard bindings&lt;/a&gt;&lt;/li&gt;
-                 &lt;/ul&gt;
-             &lt;/section&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195800.1">             &lt;section style="text-align: left;"&gt;
-                 &lt;h1&gt;THE END&lt;/h1&gt;
-                 &lt;p&gt;
+<t tx="leo.20200818195800.1">&lt;section style="text-align: left;"&gt;
+    &lt;h1&gt;THE END&lt;/h1&gt;
+    &lt;p&gt;
         - &lt;a href="https://slides.com"&gt;Try the online editor&lt;/a&gt; &lt;br&gt;
         - &lt;a href="https://github.com/hakimel/reveal.js"&gt;Source code &amp;amp; documentation&lt;/a&gt;
-                 &lt;/p&gt;
+    &lt;/p&gt;
 &lt;/section&gt;
 </t>
 </tnodes>
