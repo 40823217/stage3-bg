@@ -14,7 +14,7 @@ print ('Start')
 # Close eventual old connections
 vrep.simxFinish(-1)
 # Connect to V-REP remote server
-clientID = vrep.simxStart('192.168.192.121', 19997, True, True, 5000, 5)
+clientID = vrep.simxStart('172.20.10.2', 19997, True, True, 5000, 5)
 
 if clientID != -1:
     print ('Connected to remote API server')
