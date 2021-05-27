@@ -1,6 +1,6 @@
 <h1>about</h1>
 <p></p>
-<h4>小組倉儲:<a href="https://github.com/40823217/stage3-bg">stage3-bg2</a> </h4>
+<h4>小組倉儲:<a href="https://github.com/40823217/stage3-bg">stage3-bg2</a></h4>
 <p>---------------------------</p>
 <p><strong>[注意]請各組在開始執行 Stage3 專案前, 將 Stage1 與 Stage2 各組員所參與執行的專案內容, 寫在 Stage3 的分組網站上。</strong></p>
 <p><strong>-------------------------</strong></p>
@@ -9,7 +9,7 @@
 <h4><a href="https://github.com/40823201/cd2021">40823201</a>/<a href="https://40823201.github.io/cd2021/content/">40823201</a></h4>
 <h4><a href="https://github.com/40823209/cd2021">40823209</a>/<a href="https://40823209.github.io/cd2021/content/index.html">40823209</a></h4>
 <h4><a href="https://github.com/40823210/cd2021">40823210</a>/<a href="https://40823210.github.io/cd2021/content/index.html">40823210</a> 李柏諺</h4>
-<h4><a href="https://github.com/40823206/cd2021">40823206</a>/<a href="https://40823206.github.io/cd2021/content/index.html">40823206</a></h4>
+<h4><a href="https://gitlab.com/40823206/cd2021-">40823206</a>/<a href="https://40823206.gitlab.io/cd2021-/content/index.html">40823206</a></h4>
 <h4><a href="https://github.com/40823207/cd2021">40823207</a>/<a href="https://40823207.github.io/cd2021/content/index.html">40823207</a></h4>
 <h4><a href="https://github.com/40823223/cd2021">40823223</a>/<a href="https://40823223.github.io/cd2021/content/index.html">40823223</a></h4>
 <h4><a href="https://github.com/40823224/cd2021">40823224</a>/<a href="https://40823224.github.io/cd2021/content/index.html">40823224</a></h4>
@@ -33,8 +33,8 @@
 <p>題目:傘</p>
 <p>設計動機:<span>不想要淋雨曬太陽</span></p>
 <p>分工:</p>
-<p>40823206:網頁製作、合併、更新</p>
-<p>40823207:繪製圖檔、模擬</p>
+<p><a href="https://40823206.gitlab.io/cd2021-/content/index.html">40823206</a>:網頁製作、合併、更新</p>
+<p><a href="https://40823207.github.io/cd2021/content/index.html">40823207</a>:繪製圖檔、模擬</p>
 <p>產品組合展示</p>
 <p><img alt="" height="225" src="/images/傘.png" width="400"/></p>
 <h2>stage1-bg9</h2>
@@ -426,7 +426,10 @@
 <p>八人小組:</p>
 <p>40823217(組長)/40823201/40823206/40823207/40823209/40823210/40823223/40823224</p>
 <h2>W9網頁操作</h2>
-<h3>ipv4操作</h3>
+<p>1.學會如何使用ipv4。</p>
+<p>2.利用老師給的分組名單，用程式推導出每個小組的網頁跟倉儲</p>
+<p>還有每個組員的倉儲。</p>
+<p>3.利用ipv4的[remote API]來進行遠端的操控<span>coppeliasim</span></p><h3>ipv4操作</h3>
 <p>打開網路介面卡</p>
 <p><img alt="" height="200" src="/images/1網路介面卡_LI.jpg" width="356"/></p>
 <p>選擇當前使用的網路(插網路線選擇乙太網路，連接WIFI則是選擇WIFI)</p>
@@ -569,8 +572,28 @@ print(output)
 <p><img alt="" height="150" src="/images/老師文獻.jpg" width="860"/></p>
 <p></p>
 <h2>W11直播處理</h2>
-<p></p>
-<p></p>
+<p><a href="https://portableapps.com/apps/music_video/obs-studio-portable">OBS下載</a></p>
+<p>找到下載好的OBSPortable資料夾</p>
+<p><img alt="" height="250" src="/images/05231_LI.jpg" width="444"/></p>
+<p>App&gt;obs-studio&gt;bin&gt;64bit 找到 <strong>obs64.exe </strong>並且打開他</p>
+<p><img alt="" height="250" src="/images/05232_LI.jpg" width="444"/></p>
+<p>一開始會發現是黑屏</p>
+<p>在右下角找到來源&gt;+&gt;顯示器擷取</p>
+<p><img alt="" height="250" src="/images/05233_LI.jpg" width="444"/></p>
+<p>確定</p>
+<p><img alt="" height="250" src="/images/05234_LI.jpg" width="444"/></p>
+<p>進到設定&gt;串流</p>
+<p><img alt="" height="250" src="/images/05236_LI.jpg" width="444"/></p>
+<p>將服務及伺服器改為YouTube</p>
+<p><img alt="" height="250" src="/images/05237_LI.jpg" width="444"/></p>
+<p>到YouTube直播頁面(需24小時前開起權限)</p>
+<p>在下方找到串流金鑰並複製</p>
+<p><img alt="" height="250" src="/images/05238_LI.jpg" width="444"/></p>
+<p>回到OBS設定</p>
+<p>將剛複製的串流金鑰貼上</p>
+<p><img alt="" height="250" src="/images/05239_LI.jpg" width="444"/></p>
+<p>到YouTube確認是否串流成功即可開始直播</p>
+<p><img alt="" height="250" src="/images/052311.png" width="444"/></p>
 <p></p>
 <h2>W12 使用remoteapi</h2>
 <h4>CoppeliaSim 場景 remote API 協同監控流程:</h4>
@@ -581,6 +604,8 @@ print(output)
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/85nMph2M8Fc" width="560"></iframe></span></p>
 <p><span></span></p>
 <p><span>因為只有先打好按鈕設定及程式大概的主體，所以會有轉很快的情形發生，是因為我還沒調轉速。</span></p>
+<h2>W13小組遠距討論</h2>
+<p>小組討論<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/dfnujRdXick" title="YouTube video player" width="560"></iframe></p>
 <h1>直播影片</h1>
 <p></p>
 <h4>W11</h4>
