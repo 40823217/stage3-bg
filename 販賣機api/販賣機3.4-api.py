@@ -20,7 +20,7 @@ if clientID != -1:
     print ('Connected to remote API server')
     
     res = vrep.simxAddStatusbarMessage(
-        clientID, "40823217",
+        clientID, "40823217&40823210",
         vrep.simx_opmode_oneshot)
     if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
         print("Could not add a message to the status bar.")
@@ -100,7 +100,7 @@ if clientID != -1:
             
     
     
-        #keyboard "space" O
+        #keyboard "space" 
         if keyboard.is_pressed("space"):
             vrep.simxSetJointTargetVelocity(clientID,SP1_handle,0,opmode)
             vrep.simxSetJointTargetVelocity(clientID,SP2_handle,0,opmode)
@@ -136,7 +136,21 @@ if clientID != -1:
             vrep.simxSetJointTargetVelocity(clientID,slide2_handle,1,opmode)
             vrep.simxSetJointTargetVelocity(clientID,Worm_2_handle,1,opmode)
             vrep.simxSetJointTargetVelocity(clientID,Board_handle,1,opmode)
-        
+            
+         #keyboard "E" 
+        if keyboard.is_pressed("E"):
+            vrep.simxSetJointTargetVelocity(clientID,slide1_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,slide2_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Worm_2_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Board_handle,0,opmode)   
+            
+        #keyboard "S" 
+        if keyboard.is_pressed("S"):
+            vrep.simxSetJointTargetVelocity(clientID,slide1_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,slide2_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Worm_2_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Board_handle,-1,opmode)
+            
         #keyboard "C" 
         if keyboard.is_pressed("C"):
             vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,1,opmode)
