@@ -14,7 +14,7 @@ print ('Start')
 # Close eventual old connections
 vrep.simxFinish(-1)
 # Connect to V-REP remote server
-clientID = vrep.simxStart('192.168.1.103', 19997, True, True, 5000, 5)
+clientID = vrep.simxStart('172.20.10.2', 19997, True, True, 5000, 5)
 
 if clientID != -1:
     print ('Connected to remote API server')
@@ -60,43 +60,43 @@ if clientID != -1:
     
         #keyboard "1" 
         if keyboard.is_pressed("1"):
-            vrep.simxSetJointTargetVelocity(clientID,SP1_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP1_handle,500,opmode)
         
             #keyboard "2" 
         if keyboard.is_pressed("2"):
-            vrep.simxSetJointTargetVelocity(clientID,SP2_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP2_handle,500,opmode)
             
         
         #keyboard "3" 
         if keyboard.is_pressed("3"):
-            vrep.simxSetJointTargetVelocity(clientID,SP3_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP3_handle,500,opmode)
             
         #keyboard "4" 
         if keyboard.is_pressed("4"):
-            vrep.simxSetJointTargetVelocity(clientID,SP4_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP4_handle,500,opmode)
         
         #keyboard "5" 
         if keyboard.is_pressed("5"):
-            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,500,opmode)
             
         
         #keyboard "6" 
         if keyboard.is_pressed("6"):
-            vrep.simxSetJointTargetVelocity(clientID,SP6_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP6_handle,500,opmode)
             
         
         #keyboard "7" 
         if keyboard.is_pressed("7"):
-            vrep.simxSetJointTargetVelocity(clientID,SP7_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP7_handle,500,opmode)
             
         
         #keyboard "8" 
         if keyboard.is_pressed("8"):
-            vrep.simxSetJointTargetVelocity(clientID,SP8_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP8_handle,500,opmode)
         
         #keyboard "9" 
         if keyboard.is_pressed("9"):
-            vrep.simxSetJointTargetVelocity(clientID,SP9_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP9_handle,500,opmode)
             
     
     
