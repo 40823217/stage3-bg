@@ -1,7 +1,3 @@
-# File created by Thibaut Royer, Epitech school
-# thibaut1.royer@epitech.eu
-# It intends to be an example program for the "Two wheels, one arm" educative project.
-
 import sim as vrep
 import math
 import random
@@ -14,13 +10,13 @@ print ('Start')
 # Close eventual old connections
 vrep.simxFinish(-1)
 # Connect to V-REP remote server
-clientID = vrep.simxStart('192.168.1.103', 19997, True, True, 5000, 5)
+clientID = vrep.simxStart('172.20.10.2', 19997, True, True, 5000, 5)
 
 if clientID != -1:
     print ('Connected to remote API server')
     
     res = vrep.simxAddStatusbarMessage(
-        clientID, "40823217",
+        clientID, "40823217&40823210",
         vrep.simx_opmode_oneshot)
     if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
         print("Could not add a message to the status bar.")
@@ -60,47 +56,47 @@ if clientID != -1:
     
         #keyboard "1" 
         if keyboard.is_pressed("1"):
-            vrep.simxSetJointTargetVelocity(clientID,SP1_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP1_handle,1500,opmode)
         
             #keyboard "2" 
         if keyboard.is_pressed("2"):
-            vrep.simxSetJointTargetVelocity(clientID,SP2_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP2_handle,1500,opmode)
             
         
         #keyboard "3" 
         if keyboard.is_pressed("3"):
-            vrep.simxSetJointTargetVelocity(clientID,SP3_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP3_handle,1500,opmode)
             
         #keyboard "4" 
         if keyboard.is_pressed("4"):
-            vrep.simxSetJointTargetVelocity(clientID,SP4_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP4_handle,1500,opmode)
         
         #keyboard "5" 
         if keyboard.is_pressed("5"):
-            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,1500,opmode)
             
         
         #keyboard "6" 
         if keyboard.is_pressed("6"):
-            vrep.simxSetJointTargetVelocity(clientID,SP6_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP6_handle,1500,opmode)
             
         
         #keyboard "7" 
         if keyboard.is_pressed("7"):
-            vrep.simxSetJointTargetVelocity(clientID,SP7_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP7_handle,1500,opmode)
             
         
         #keyboard "8" 
         if keyboard.is_pressed("8"):
-            vrep.simxSetJointTargetVelocity(clientID,SP8_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP8_handle,1500,opmode)
         
         #keyboard "9" 
         if keyboard.is_pressed("9"):
-            vrep.simxSetJointTargetVelocity(clientID,SP9_handle,150,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,SP9_handle,1500,opmode)
             
     
     
-        #keyboard "space" O
+        #keyboard "space" 
         if keyboard.is_pressed("space"):
             vrep.simxSetJointTargetVelocity(clientID,SP1_handle,0,opmode)
             vrep.simxSetJointTargetVelocity(clientID,SP2_handle,0,opmode)
@@ -136,10 +132,24 @@ if clientID != -1:
             vrep.simxSetJointTargetVelocity(clientID,slide2_handle,1,opmode)
             vrep.simxSetJointTargetVelocity(clientID,Worm_2_handle,1,opmode)
             vrep.simxSetJointTargetVelocity(clientID,Board_handle,1,opmode)
-        
+            
+         #keyboard "E" 
+        if keyboard.is_pressed("E"):
+            vrep.simxSetJointTargetVelocity(clientID,slide1_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,slide2_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Worm_2_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Board_handle,0,opmode)   
+            
+        #keyboard "S" 
+        if keyboard.is_pressed("S"):
+            vrep.simxSetJointTargetVelocity(clientID,slide1_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,slide2_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Worm_2_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,Board_handle,-1,opmode)
+            
         #keyboard "C" 
         if keyboard.is_pressed("C"):
-            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,3,opmode)
             
         
         #keyboard "V" 
