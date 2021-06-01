@@ -2,7 +2,7 @@
         <head>
         <title>Stage3-bg2</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -134,10 +134,154 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">bg3-圖檔 << <a href='bg3-圖檔.html'>Previous</a> <a href='steag2-bg11.html'>Next</a> >> steag2-bg11<br /><h1>bg3-討論</h1>
-<p><a href="https://gitter.im/stage2-bg3/communityv">小組Gitter</a></p>
+    <div id="tipue_search_content">task2 << <a href='task2.html'>Previous</a> <br /><h1>stage2-bg11</h1>
+<h4><span>stage2 所完成的 coppeliasim 場景, 採 Python remote API 進行操控</span></h4>
+<p>----------</p>
+<h4>(按鍵指令)</h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">1~9..........控制螺旋鉤子
+"空白建".....停止螺旋鉤子
+Z............關門
+X............暫停開/關門
+C............開門
+O............控制滾輪
+W............平台上升
+E............暫停平台
+S............下降平台
+esc..........結束</pre>
+<p><span>◾實際操作影片</span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/yz_iSELMHd8" title="YouTube video player" width="560"></iframe></p>
+<p>----------<br/>(程式碼)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+
+print ('Start')
+
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.0.12', 19997, True, True, 5000, 5)
+
+if clientID != -1:
+    print ('Connected to remote API server')
+    
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823210",
+        vrep.simx_opmode_oneshot)
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+
+    opmode = vrep.simx_opmode_oneshot_wait
+    
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,DOOR_handle=vrep.simxGetObjectHandle(clientID,"joint4",opmode)
+    ret,C1_handle=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,B1_handle=vrep.simxGetObjectHandle(clientID,"joint1",opmode)
+    ret,SP5_handle=vrep.simxGetObjectHandle(clientID,"joint",opmode)
+    ret,S1_1_handle=vrep.simxGetObjectHandle(clientID,"S1_1",opmode)
+    ret,S2_1_handle=vrep.simxGetObjectHandle(clientID,"S2_1",opmode)
+    ret,S3_1_handle=vrep.simxGetObjectHandle(clientID,"S3_1",opmode)
+    ret,S4_1_handle=vrep.simxGetObjectHandle(clientID,"S4_1",opmode)
+    ret,S5_1_handle=vrep.simxGetObjectHandle(clientID,"S5_1",opmode)
+    ret,S6_1_handle=vrep.simxGetObjectHandle(clientID,"S6_1",opmode)
+    ret,S7_1_handle=vrep.simxGetObjectHandle(clientID,"S7_1",opmode)
+    ret,S8_1_handle=vrep.simxGetObjectHandle(clientID,"S8_1",opmode)
+    ret,S9_1_handle=vrep.simxGetObjectHandle(clientID,"S9_1",opmode)
+    ret,S10_1_handle=vrep.simxGetObjectHandle(clientID,"S10_1",opmode)
+    #ret,main = vrep.simxGetObjectHandle(clientID, "main", opmode)
+    while True:
+    
+        #keyboard "5" 
+        if keyboard.is_pressed("5"):
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,1,opmode)
+        
+        #keyboard "space" 
+        if keyboard.is_pressed("space"):
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,0,opmode)
+        #keyboard "O" 
+        if keyboard.is_pressed("O"):
+            vrep.simxSetJointTargetVelocity(clientID,S1_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S2_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S3_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S4_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S5_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S6_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S7_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S8_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S9_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S10_1_handle,100,opmode)
+        #keyboard "W" 
+        if keyboard.is_pressed("W"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,2,opmode)
+         #keyboard "E" 
+        if keyboard.is_pressed("E"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,0,opmode)   
+        #keyboard "S" 
+        if keyboard.is_pressed("S"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,-2,opmode)
+        #keyboard "Z" 
+        if keyboard.is_pressed("Z"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,1000,opmode)
+       #keyboard "X" 
+        if keyboard.is_pressed("X"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,0,opmode)
+        #keyboard "C" 
+        if keyboard.is_pressed("C"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,-1.5,opmode)              
+        #keyboard "esc" 
+        if  keyboard.is_pressed("esc"):
+            vrep.simxStopSimulation(clientID, opmode)
+            break
+        
+else:
+    print ('Failed connecting to remote API server')
+    print ('End')</pre>
 <p></p>
-<br />bg3-圖檔 << <a href='bg3-圖檔.html'>Previous</a> <a href='steag2-bg11.html'>Next</a> >> steag2-bg11</div>
+<p><br/>task1 &lt;&lt; <a href="/get_page/stage2-bg11/task1.html">Previous</a> <a href="/get_page/stage2-bg11/task3.html">Next</a> &gt;&gt; task3</p>
+<!-- footer -->
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
+<script>
+document.write(new Date().getFullYear());
+</script>
+All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+<!-- for footer -->
+<p></p>
+<!-- for site wrap -->
+<p></p>
+<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
+<!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+<script src="/get_page/cmsimde/static/chimper/js/main.js"></script><br />task2 << <a href='task2.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
