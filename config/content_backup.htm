@@ -546,7 +546,7 @@ for i in teamb[0:]:
  
 print(output)
 # the following will use group data to generate needed html</pre>
-<h3>task2</h3>
+<h3>範例task2</h3>
 <p>下載好<span>4.2.0版的</span><a href="http://mde.tw/cad2020/content/CoppeliaSim.html">coppeliasim</a><span>和</span><a href="http://mde.tw/cad2020/downloads/coppeliasim/vrep_remoteapi_ex.7z">vrep.remoteApi</a>後</p>
 <p>在資料夾中找到coppeliasim.exe並且打開coppeliasim</p>
 <p><img caption="false" height="250" src="/images/exe.jpg" width="445"/></p>
@@ -561,6 +561,7 @@ print(output)
 <p><img alt="" height="250" src="/images/2w1attt.png" width="444"/></p>
 <p><img alt="" height="250" src="/images/work.png" width="444"/></p>
 <h3>task3</h3>
+<p><img alt="" height="250" src="/images/0527.gif" width="561"/></p>
 <p>先下載<a href="https://drive.google.com/file/d/13dzUp_j6U2PBHY1Gzl_1tzxSg7ULT8qi/view?usp=sharing">RoboDK 5.2.2 可攜程式</a>及<a href="https://drive.google.com/file/d/1XoB3F5cPK8R4Y8AIWL5pKR5TQjPW8TRv/view?usp=sharing">Pick and Place 檔案</a></p>
 <p><img alt="" height="250" src="/images/05271.png" width="444"/></p>
 <p>下載完解壓縮至隨身碟</p>
@@ -594,14 +595,18 @@ print(output)
 <p><span>將右方欄位的藍色路徑複製，並在RoboDK中貼上(綠色線框選處)-&gt;確定</span></p>
 <p><img alt="" height="250" src="/images/052716.png" width="444"/></p>
 <p>左側上方的Pick and Place點擊左鍵-&gt;編輯Python程序 即可作動</p>
-<p><img alt="" height="250" src="/images/052715.png" width="444"/></p>
-<p><img alt="" height="250" src="/images/0527.gif" width="561"/></p>
+<p><img alt="" height="250" src="/images/052717.png" width="444"/></p>
 <p></p>
 <p></p>
 <p></p>
 <p></p>
 <p></p>
-<p></p><h2>W10討論主題</h2>
+<p></p>
+<h2>W10討論主題</h2>
+<h4>模擬:40823210、40823217 ； 日期:04/30</h4>
+<h4>目前利用coppeliasim模擬商品掉落情形，但商品會因為螺旋轉動而倒向一邊，不盡理想，下次改善重點。</h4>
+<p><img alt="" height="268" src="/images/2.2ttt.gif" width="500"/></p>
+<p>------------------------------------------------------------------------------------------------------</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/rIZ-RwBM7wY" title="YouTube video player" width="560"></iframe></p>
 <p><img caption="false" height="250" src="/images/stage3.jpg" width="711"/></p>
 <p>經小組成員討論後，決定主題延續Stage2-bg11的免彎腰販賣機。</p>
@@ -612,8 +617,16 @@ print(output)
 <p>網頁製作:40823209/40823201</p>
 <p><a href="http://mde.tw/cd2021/downloads/2012_ece_The%20Design,%20Simulation,%20Verification%20and%20Implementation%20of%20Vending%20MachineBased%20on%20FPGA.pdf">ECE的Vending machine 設計與模擬</a></p>
 <p><img alt="" height="150" src="/images/老師文獻.jpg" width="860"/></p>
-<p></p>
 <h2>W11直播處理</h2>
+<h4><strong>"Stage3進度"</strong></h4>
+<h4>模擬:40823210、40823217 ； 日期:05/07</h4>
+<h4>此次利用coppeliasim模擬商品掉落情形，既上禮拜經驗，本次增加了2跟檔桿，但增加檔桿後似乎與螺旋勾子有砰撞上面的問題...。</h4>
+<p><img alt="" height="268" src="/images/3.0ttt.gif" width="500"/></p>
+<h4>模擬:40823210、40823217 ； 日期:05/07</h4>
+<h4>既上面模擬修改後，改善了檔桿與螺旋勾子的碰撞問題，並移動了位子；且將商品稍微放大並讓商品貼齊置物架，使商品在移動過程中穩定一些。</h4>
+<p><img alt="" height="268" src="/images/3.3ttt.gif" width="500"/></p>
+<h4><em><strong>------------------------------------------------------------------------------------------</strong></em></h4>
+<h4><strong>"直播處理"</strong></h4>
 <p><a href="https://portableapps.com/apps/music_video/obs-studio-portable">OBS下載</a></p>
 <p>找到下載好的OBSPortable資料夾</p>
 <p><img alt="" height="250" src="/images/05231_LI.jpg" width="444"/></p>
@@ -637,19 +650,86 @@ print(output)
 <p>到YouTube確認是否串流成功即可開始直播</p>
 <p><img alt="" height="250" src="/images/052311.png" width="444"/></p>
 <p></p>
-<h2>W12 使用remoteapi</h2>
+<h2>W12 使用remote api</h2>
+<h4><strong>"Stage3進度"</strong></h4>
+<h4>模擬:40823210、40823217 ； 日期:05/14</h4>
+<h4>已修改完畢，剩一些小細節需要去修正，例如:碰撞上的問題、以</h4>
+<h4><span>及一些速度的變化要調整</span><span>外。其他的沒什麼大礙了，程式碼也幾乎沒有問題。(然後因</span></h4>
+<h4><span>為我電腦超級無敵的卡所以才呈現的一禎一禎的。)</span></h4>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/DHJFXj3MPiw" width="560"></iframe></span></p>
+<p>[東西都在我們網站能下載]</p>
+<p><span></span></p>
+<p><span></span></p>
+<p>-------------------------------------------------------------------------------------------------------</p>
+<h4>"使用remote api"</h4>
 <h4>CoppeliaSim 場景 remote API 協同監控流程:</h4>
 <h4><span>各組分別將個人在 stage1 與 stage2 所完成的 coppeliasim 場景,</span></h4>
 <h4><span> 採 Python remote API 進行遠端操控。</span></h4>
 <p><span>(相關檔案都放在了倉儲:<a href="https://github.com/40823217/stage3-bg2">stage3-bg2</a>-販賣機api)</span></p>
-<p><span>5/14 第一次測試</span></p>
+<p>04/29</p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/85nMph2M8Fc" width="560"></iframe></span></p>
-<p><span></span></p>
-<p><span>因為只有先打好按鈕設定及程式大概的主體，所以會有轉很快的情形發生，是因為我還沒調轉速。</span></p>
-<p><span></span></p>
-<p><span></span></p>
-<h2>W13小組遠距討論</h2>
-<p>小組討論<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/dfnujRdXick" title="YouTube video player" width="560"></iframe></p>
+<p><span>因為只有先打好按鈕設定及程式大概的主體，所以會有轉很快的情形發生，是因為我還沒調轉速。</span></p><h2>W13小組遠距討論</h2>
+<h4><strong>"Stage3進度"</strong></h4>
+<h4><span>模擬:40823210、40823217 ； 日期:05/21</span></h4>
+<h4>此次利用coppeliasim模擬整體免彎腰販賣機，既上禮拜經驗，重新定義了各個碰撞&amp;動態設定，也調整了各物體轉速度，為了使其整體穩定一點，雖有好轉，但仍然需再多加微調；問題較大的地方是在於"00:57"平台要上升時，有二物件會產生分開的情況，有待下次改善...。</h4>
+<p>(按鍵指令)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">1~9..........控制螺旋鉤子
+"空白建".....停止螺旋鉤子
+C............控制開門
+V............暫停關門
+O............控制滾輪
+W............平台上升
+E............暫停平台
+S............下降平台
+esc..........結束</pre>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/BhsF6XHm8nM" title="YouTube video player" width="560"></iframe></p>
+<p>-----------------------------------------------------------------------------------------------------</p>
+<h4>"小組遠距討論"</h4>
+<h4><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/dfnujRdXick" title="YouTube video player" width="560"></iframe></h4>
+<h2>W14</h2>
+<h4><strong>"Stage3進度"</strong></h4>
+<h4><span>模擬:40823210、40823217 ； 日期:05/28</span></h4>
+<h4>此次利用coppeliasim模擬整體免彎腰販賣機，既上禮拜經驗，透過對部分零件進行選擇性的分解&amp;組合和Joint的功能，解決了過往平台要上升時，會有二物件產生分開的情況；此外也發現coppeliasim在分解STL檔案組合模型時，零件會分解的不盡理想，此次也改善了零件分解過多的問題；最後對於販賣機的門在進行分解後依然是保持一體的，導致取物口的窗戶無法開啟，目前正在想辦法解決...。</h4>
+<h4>(按鍵指令)</h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">1~9..........控制螺旋鉤子
+"空白建".....停止螺旋鉤子
+C............關門
+V............暫停開/關門
+B............開門
+O............滾輪
+W............平台上升
+E............平台暫停
+S............平台下降
+esc..........結束</pre>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/w5l4vcVAnsc" title="YouTube video player" width="560"></iframe></p>
+<p>----------</p>
+<p><span class="style-scope yt-formatted-string" dir="auto">影片場景之ttt檔及相關資料，可至stage3-bg2倉儲下載: </span><a class="yt-simple-endpoint style-scope yt-formatted-string" dir="auto" href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbFgyaE9kOHNQQ1BIUGMwQ2RzVXBpSV9LREtlUXxBQ3Jtc0ttZnBuMWFDRDFWV0s1czFLNk0tVVFiakxzWTdHYW1UV3ltZ0plYWhCX2cxWUFuTTVrd2pQYXRmOEs2QmdSQ0NpWERaNWN4UUkzNGlPS3QyY3huUWVmTzF5QjBRaE5EZkxuYkpBa29DcG05UTZuVVhNTQ&amp;q=https%3A%2F%2Fgithub.com%2F40823210%2Fstage3-bg2" rel="nofollow" spellcheck="false" target="_blank">https://github.com/40823210/stage3-bg2</a></p>
+<p>(檔案名稱:免彎腰販賣機 ➝販賣機3.5)</p>
+<h2>W15</h2>
+<h4><strong>"Stage3進度"</strong></h4>
+<h4><span>模擬:40823210、40823217 ； 日期:05/30</span></h4>
+<h4>此次利用coppeliasim模擬整體免彎腰販賣機，既上禮拜經驗，對於販賣機的門無法分解，這次將舊有的門刪除並用inventor重新進行編輯組合，轉為stl檔後再輸入進coppeliasim進行分解，並對取物口設置按鍵指令，使取物口也可利用鍵盤按鍵進行控制。</h4>
+<h4>(按鍵指令)</h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">1~9..........控制螺旋鉤子
+"空白建".....停止螺旋鉤子
+Z............關門
+X............暫停開/關門
+C............開門
+O............滾輪
+W............平台上升
+E............平台暫停
+S............平台下降
+B............取物口開啟
+N............取物口暫停
+M............取物口關閉
+esc..........結束</pre>
+<p><img caption="false" height="274" src="/images/開關門GIF.gif" width="560"/></p>
+<p>----------</p>
+<p><span class="style-scope yt-formatted-string" dir="auto">影片場景之ttt檔及相關資料，可至stage3-bg2倉儲下載: </span><a class="yt-simple-endpoint style-scope yt-formatted-string" dir="auto" href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbFgyaE9kOHNQQ1BIUGMwQ2RzVXBpSV9LREtlUXxBQ3Jtc0ttZnBuMWFDRDFWV0s1czFLNk0tVVFiakxzWTdHYW1UV3ltZ0plYWhCX2cxWUFuTTVrd2pQYXRmOEs2QmdSQ0NpWERaNWN4UUkzNGlPS3QyY3huUWVmTzF5QjBRaE5EZkxuYkpBa29DcG05UTZuVVhNTQ&amp;q=https%3A%2F%2Fgithub.com%2F40823210%2Fstage3-bg2" rel="nofollow" spellcheck="false" target="_blank">https://github.com/40823210/stage3-bg2</a></p>
+<p>(檔案名稱:免彎腰販賣機 ➝販賣機3.6)</p>
+<h2>W16</h2>
+<h2>W17</h2>
+<h2>W18</h2>
 <h1>直播影片</h1>
 <p></p>
 <h4>W11</h4>
@@ -664,9 +744,10 @@ print(output)
 <p>直播人員:40823201，40823207</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/TL6bnUCd_ao" title="YouTube video player" width="560"></iframe></p>
 <p><span>直播人員:40823209，40823223</span></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/s4raMrKrMes" title="YouTube video player" width="560"></iframe></p><h1>Youtube影片</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/s4raMrKrMes" title="YouTube video player" width="560"></iframe></p>
+<h1>Youtube影片</h1>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/rIZ-RwBM7wY" title="YouTube video player" width="560"></iframe></p>
-<h1>筆記</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/D-FKhdyYLzk" title="YouTube video player" width="560"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Hlb_8f1N7zU" title="YouTube video player" width="560"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/qLfdW-e3F5Q" title="YouTube video player" width="560"></iframe></p><h1>筆記</h1>
 <h2>更新網站</h2>
 <p>在編輯小組網站前，需先pull 組長的網頁</p>
 <p>pull完之後將組長網站的最新版本更新到自己的網頁</p>
@@ -713,7 +794,220 @@ print(output)
 <p><span></span></p>
 <p><span>6.完成開啟</span></p>
 <p><span><img alt="" height="281" src="/images/6.完成開啟.png" width="400"/></span></p>
-<p><span></span></p>
-<p><span></span></p>
+<h2>CoppeliaSim碰撞&amp;動態</h2>
+<h4>"碰撞"屬性<br/>意思即為開啟狀態下，物體會和空間中其他物體發生碰撞，從而模擬實際物理作用狀態。<br/>例:關閉時物體會直接穿過地面，開啟後物體會停於地面上。</h4>
+<h4>碰撞打勾設定解釋:</h4>
+<h4>二物體"無"父子關係的物體，使用"下排"勾勾作設定，假設在相同位置都有勾勾的話，它們就會發生碰撞；假設在每一個位置上，都不會同時出現勾勾的話，他們就不會發生碰撞。<br/>二物體"有"父子關係的物體，使用"上排"勾勾作設定，假設在相同位置都有勾勾的話，它們就會發生碰撞；假設在每一個位置上，都不會同時出現勾勾的話，他們就不會發生碰撞。</h4>
+<h4>"動態"屬性<br/>意思即為關閉狀態下，物體會被視為與世界坐標系固連的關係。<br/>例:關閉時可懸浮於空間之中，不受其他物體碰撞而移動；開啟後會受到向下的重力作用&amp;會受到和其它物件碰撞而產生不同方向的力。</h4>
+<p><span>-------------------------------------------------------------------------------------------</span></p>
+<h4>"開啟碰撞、動態屬性"</h4>
+<h4><span>◾在物體圖示點2下左鍵，開啟屬性對話框</span></h4>
+<p><span><img alt="" height="281" src="/images/碰撞0.png" width="500"/></span></p>
+<h4><span>◾</span><span>點Show dynamic properties dialog</span></h4>
+<p><span><img alt="" height="282" src="/images/碰撞1.PNG" width="500"/></span></p>
+<h4><span>◾</span><span>點Body is respondable(開啟碰撞)，</span><span>框中勾勾用來做碰撞設定</span></h4>
+<p><span><img alt="" height="282" src="/images/碰撞2.PNG" width="500"/></span></p>
+<h4><span>◾</span><span>點Body is dynamic(開啟動態)</span></h4>
+<p><span><img alt="" height="280" src="/images/碰撞3.PNG" width="500"/></span></p>
+<h4><span>◾實際操作影片</span></h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/3u3iC24gwB8" title="YouTube video player" width="560"></iframe></p>
+<h2>CoppeliaSim物體顏色、透明度</h2>
+<h4>適當調整各物體顏色、透明度，可易於查看複雜結合件</h4>
+<p>-------------------------------------------------------------------------------------------</p>
+<h4><em><strong>"更改顏色"</strong></em></h4>
+<h4><span>◾在物體圖示點2下左鍵，開啟屬性對話框</span></h4>
+<p><span><img alt="" height="284" src="/images/cs顏色1.PNG" width="500"/></span></p>
+<h4><span>◾點Adjust oolor</span></h4>
+<p><span><img alt="" height="281" src="/images/cs顏色2.PNG" width="500"/></span></p>
+<h4><span>◾點Ambient/diffuse component</span></h4>
+<p><span><img alt="" height="281" src="/images/cs顏色3.PNG" width="500"/></span></p>
+<h4><span>◾拖動框中6列數值可調整物體顏色</span></h4>
+<p><span><img alt="" height="280" src="/images/cs顏色4.PNG" width="500"/></span></p>
+<h4><span>◾實際操作影片</span></h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/1TYMHouimgo" title="YouTube video player" width="560"></iframe></p>
 <p></p>
-<p>.</p>
+<p><span>-------------------------------------------------------------------------------------------</span></p>
+<h4><em><strong>"更改透明度"</strong></em></h4>
+<h4><span>◾在物體圖示點2下左鍵，開啟屬性對話框</span></h4>
+<p><span><img alt="" height="284" src="/images/cs顏色1.PNG" width="500"/></span></p>
+<h4><span>◾點Adjust oolor</span></h4>
+<p><span><img alt="" height="281" src="/images/cs顏色2.PNG" width="500"/></span></p>
+<h4><span></span></h4>
+<h4><span>◾將選項Opacity開啟，輸入數值即可更改透明度</span></h4>
+<p><span><img alt="" height="281" src="/images/cs顏色5.PNG" width="500"/></span></p>
+<h4><span>◾實際操作影片</span></h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/J3Yu9IAtjts" title="YouTube video player" width="560"></iframe></p>
+<h2>當git pull有狀況時該如何解決</h2>
+<h4>遇到問題者:40823209 顏沐恩           日期:06/04</h4>
+<h4>遇到問題:已經git pull，但是無法拉下小組最新的網頁資料。</h4>
+<h4>解決方式如下:</h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/qLfdW-e3F5Q" title="YouTube video player" width="560"></iframe></p>
+<h4>如果你想保留剛才本地修改的程式碼，並把git伺服器上的程式碼pull到本地（本地剛才修改的程式碼將會被暫時封存起來）</h4>
+<h4>*記得要在小組倉儲底下*</h4>
+<h4>git stash</h4>
+<h4>(按ENTER)<br/>git pull origin master</h4>
+<h4><span>(按ENTER)</span><br/>git stash pop</h4>
+<h4><span>(按ENTER)</span></h4>
+<h4>最後再git pull</h4>
+<h4>如此一來，伺服器上的程式碼更新到了本地，而且你本地修改的程式碼也沒有被覆蓋，之後使用add，commit，push 命令即可更新原生代碼到伺服器了。</h4>
+<h4></h4>
+<h4>依照網路上解決方式:<a href="https://www.itread01.com/content/1545046022.html">https://www.itread01.com/content/1545046022.html</a></h4>
+<h2>SSH快速版(簡單化)</h2>
+<h4>撰寫人:40823209 顏沐恩            日期:05/27</h4>
+<h4>內容:此方法是40823247 許力右指導的，他有發現有更快設定SSH的方式，並教導我如何操作。</h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Hlb_8f1N7zU" title="YouTube video player" width="560"></iframe></p><h2>如何開啟leo及reveal</h2>
+<h4>撰寫人:40823209 顏沐恩         日期:05/20</h4>
+<h4>內容:由於我對於開啟LEO與REVEAL的過程不是很熟悉，故有請教同學40823247 許力右指導。</h4>
+<h4><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/D-FKhdyYLzk" title="YouTube video player" width="560"></iframe></h4><h1>task2</h1>
+<h4>請各組員分別將個人在 stage1 與 stage2 所完成的 coppeliasim 場景, 採 Python remote API 進行操控, 並將過程拍成影片後, 放在個人與分組網站上.</h4>
+<h4>stage3 專案中的 CoppeliaSim 請一律使用<span> </span><a href="http://a.kmol.info:88/CoppeliaSimEdu_4.2.0.7z">4.2.0 版</a>.</h4>
+<h4>範例:<span> </span><a href="http://mde.tw/cad2020/content/CoppeliaSim.html">http://mde.tw/cad2020/content/CoppeliaSim.html</a></h4>
+<h2>stage2-bg11</h2>
+<h4><span>stage2 所完成的 coppeliasim 場景, 採 Python remote API 進行操控</span></h4>
+<p>----------</p>
+<h4>(按鍵指令)</h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">1~9..........控制螺旋鉤子
+"空白建".....停止螺旋鉤子
+Z............關門
+X............暫停開/關門
+C............開門
+O............控制滾輪
+W............平台上升
+E............暫停平台
+S............下降平台
+esc..........結束</pre>
+<p><span>◾實際操作影片</span></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/yz_iSELMHd8" title="YouTube video player" width="560"></iframe></p>
+<p>----------<br/>(程式碼)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+
+print ('Start')
+
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.0.12', 19997, True, True, 5000, 5)
+
+if clientID != -1:
+    print ('Connected to remote API server')
+    
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823210",
+        vrep.simx_opmode_oneshot)
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+
+    opmode = vrep.simx_opmode_oneshot_wait
+    
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,DOOR_handle=vrep.simxGetObjectHandle(clientID,"joint4",opmode)
+    ret,C1_handle=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,B1_handle=vrep.simxGetObjectHandle(clientID,"joint1",opmode)
+    ret,SP5_handle=vrep.simxGetObjectHandle(clientID,"joint",opmode)
+    ret,S1_1_handle=vrep.simxGetObjectHandle(clientID,"S1_1",opmode)
+    ret,S2_1_handle=vrep.simxGetObjectHandle(clientID,"S2_1",opmode)
+    ret,S3_1_handle=vrep.simxGetObjectHandle(clientID,"S3_1",opmode)
+    ret,S4_1_handle=vrep.simxGetObjectHandle(clientID,"S4_1",opmode)
+    ret,S5_1_handle=vrep.simxGetObjectHandle(clientID,"S5_1",opmode)
+    ret,S6_1_handle=vrep.simxGetObjectHandle(clientID,"S6_1",opmode)
+    ret,S7_1_handle=vrep.simxGetObjectHandle(clientID,"S7_1",opmode)
+    ret,S8_1_handle=vrep.simxGetObjectHandle(clientID,"S8_1",opmode)
+    ret,S9_1_handle=vrep.simxGetObjectHandle(clientID,"S9_1",opmode)
+    ret,S10_1_handle=vrep.simxGetObjectHandle(clientID,"S10_1",opmode)
+    #ret,main = vrep.simxGetObjectHandle(clientID, "main", opmode)
+    while True:
+    
+        #keyboard "5" 
+        if keyboard.is_pressed("5"):
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,1,opmode)
+        
+        #keyboard "space" 
+        if keyboard.is_pressed("space"):
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,0,opmode)
+        #keyboard "O" 
+        if keyboard.is_pressed("O"):
+            vrep.simxSetJointTargetVelocity(clientID,S1_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S2_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S3_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S4_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S5_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S6_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S7_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S8_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S9_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S10_1_handle,100,opmode)
+        #keyboard "W" 
+        if keyboard.is_pressed("W"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,2,opmode)
+         #keyboard "E" 
+        if keyboard.is_pressed("E"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,0,opmode)   
+        #keyboard "S" 
+        if keyboard.is_pressed("S"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,-2,opmode)
+        #keyboard "Z" 
+        if keyboard.is_pressed("Z"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,1000,opmode)
+       #keyboard "X" 
+        if keyboard.is_pressed("X"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,0,opmode)
+        #keyboard "C" 
+        if keyboard.is_pressed("C"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,-1.5,opmode)              
+        #keyboard "esc" 
+        if  keyboard.is_pressed("esc"):
+            vrep.simxStopSimulation(clientID, opmode)
+            break
+        
+else:
+    print ('Failed connecting to remote API server')
+    print ('End')</pre>
+<p></p>
+<p><br/>task1 &lt;&lt; <a href="/get_page/stage2-bg11/task1.html">Previous</a> <a href="/get_page/stage2-bg11/task3.html">Next</a> &gt;&gt; task3</p>
+<!-- footer -->
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
+<script>
+document.write(new Date().getFullYear());
+</script>
+All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+<!-- for footer -->
+<p></p>
+<!-- for site wrap -->
+<p></p>
+<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
+<!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+<script src="/get_page/cmsimde/static/chimper/js/main.js"></script>
