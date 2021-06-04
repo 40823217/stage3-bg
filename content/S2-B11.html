@@ -1,0 +1,300 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>Stage3-bg2</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>stage3-bg2</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">stage3-bg2</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='about.html'>about</a><li class='has-children'><a href='stage1.html'>stage1</a><ul class='dropdown'><li><a href='stage1-bg3.html'>stage1-bg3</a><li class='has-children'><a href='stage1-bg9.html'>stage1-bg9</a><ul class='dropdown'><li><a href='bg9設計概念.html'>bg9設計概念</a><li><a href='bg9設計草圖.html'>bg9設計草圖</a><li><a href='bg9產品展示.html'>bg9產品展示</a></li></ul><li class='has-children'><a href='stage1-bg13.html'>stage1-bg13</a><ul class='dropdown'><li><a href='bg13設計概念.html'>bg13設計概念</a><li><a href='bg13設計草圖.html'>bg13設計草圖</a><li><a href='bg13產品展示.html'>bg13產品展示</a></li></ul><li class='has-children'><a href='stage1-bg18.html'>stage1-bg18</a><ul class='dropdown'><li><a href='bg18零件組合圖.html'>bg18零件組合圖</a><li><a href='bg18組合零件爆炸.html'>bg18組合零件爆炸</a><li><a href='bg18Invnetor模擬.html'>bg18Invnetor模擬</a><li><a href='bg18產品報告.html'>bg18產品報告</a><li><a href='bg18PDF.html'>bg18PDF</a><li><a href='bg18報告.html'>bg18報告</a></li></li></ul></ul><li class='has-children'><a href='stage2.html'>stage2</a><ul class='dropdown'><li class='has-children'><a href='stage2-bg3.html'>stage2-bg3</a><ul class='dropdown'><li><a href='bg3-模擬結果.html'>bg3-模擬結果</a><li><a href='bg3-PDF檔案.html'>bg3-PDF檔案</a><li><a href='bg3-參考資料.html'>bg3-參考資料</a><li><a href='bg3-圖檔.html'>bg3-圖檔</a><li><a href='bg3-討論.html'>bg3-討論</a></li></ul><li class='has-children'><a href='steag2-bg11.html'>steag2-bg11</a><ul class='dropdown'><li><a href='bg11模擬結果.html'>bg11模擬結果</a></li></li></ul></ul><li class='has-children'><a href='stage3.html'>stage3</a><ul class='dropdown'><li class='has-children'><a href='W9網頁操作.html'>W9網頁操作</a><ul class='dropdown'><li><a href='ipv4操作.html'>ipv4操作</a><li><a href='task1測試.html'>task1測試</a><li><a href='範例task2.html'>範例task2</a><li><a href='task3.html'>task3</a></li></ul><li><a href='W10討論主題.html'>W10討論主題</a><li><a href='W11直播處理.html'>W11直播處理</a><li><a href='W12 使用remote api.html'>W12 使用remote api</a><li><a href='W13小組遠距討論.html'>W13小組遠距討論</a><li><a href='W16.html'>W16</a><li><a href='W17.html'>W17</a><li><a href='W18.html'>W18</a></li></ul><li class='has-children'><a href='task2.html'>task2</a><ul class='dropdown'><li><a href='S1-B18.html'>S1-B18</a><li><a href='S2-B11.html'>S2-B11</a></li></ul><li><a href='直播影片.html'>直播影片</a><li><a href='Youtube影片.html'>Youtube影片</a><li class='has-children'><a href='筆記.html'>筆記</a><ul class='dropdown'><li><a href='更新網站.html'>更新網站</a><li><a href='reveal的頁面問題.html'>reveal的頁面問題</a><li><a href='coppeliasim 教學.html'>coppeliasim 教學</a><li><a href='CoppeliaSim碰撞&動態.html'>CoppeliaSim碰撞&動態</a><li><a href='CoppeliaSim物體顏色、透明度.html'>CoppeliaSim物體顏色、透明度</a><li><a href='當git pull有狀況時該如何解決.html'>當git pull有狀況時該如何解決</a><li><a href='SSH快速版(簡單化).html'>SSH快速版(簡單化)</a><li><a href='如何開啟leo及reveal.html'>如何開啟leo及reveal</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">S1-B18 << <a href='S1-B18.html'>Previous</a> <a href='直播影片.html'>Next</a> >> 直播影片<br /><h1>S2-B11</h1>
+<h4>本人是stage2-bg11成員</h4>
+<h4><span>stage2 所完成的 coppeliasim 場景, 採 Python remote API 進行操控。</span></h4>
+<p>----------</p>
+<h4>(按鍵指令)</h4>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">1~9..........控制螺旋鉤子
+"空白建".....停止螺旋鉤子
+Z............關門
+X............暫停開/關門
+C............開門
+O............控制滾輪
+W............平台上升
+E............暫停平台
+S............下降平台
+esc..........結束</pre>
+<p><span>◾實際操作影片</span></p>
+<p><span></span></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" data-mce-fragment="1" frameborder="0" height="315" src="https://www.youtube.com/embed/yz_iSELMHd8" title="YouTube video player" width="560"></iframe></p>
+<p>----------<br/>(程式碼)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+
+print ('Start')
+
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.0.12', 19997, True, True, 5000, 5)
+
+if clientID != -1:
+    print ('Connected to remote API server')
+    
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823210",
+        vrep.simx_opmode_oneshot)
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+
+    opmode = vrep.simx_opmode_oneshot_wait
+    
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,DOOR_handle=vrep.simxGetObjectHandle(clientID,"joint4",opmode)
+    ret,C1_handle=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,B1_handle=vrep.simxGetObjectHandle(clientID,"joint1",opmode)
+    ret,SP5_handle=vrep.simxGetObjectHandle(clientID,"joint",opmode)
+    ret,S1_1_handle=vrep.simxGetObjectHandle(clientID,"S1_1",opmode)
+    ret,S2_1_handle=vrep.simxGetObjectHandle(clientID,"S2_1",opmode)
+    ret,S3_1_handle=vrep.simxGetObjectHandle(clientID,"S3_1",opmode)
+    ret,S4_1_handle=vrep.simxGetObjectHandle(clientID,"S4_1",opmode)
+    ret,S5_1_handle=vrep.simxGetObjectHandle(clientID,"S5_1",opmode)
+    ret,S6_1_handle=vrep.simxGetObjectHandle(clientID,"S6_1",opmode)
+    ret,S7_1_handle=vrep.simxGetObjectHandle(clientID,"S7_1",opmode)
+    ret,S8_1_handle=vrep.simxGetObjectHandle(clientID,"S8_1",opmode)
+    ret,S9_1_handle=vrep.simxGetObjectHandle(clientID,"S9_1",opmode)
+    ret,S10_1_handle=vrep.simxGetObjectHandle(clientID,"S10_1",opmode)
+    #ret,main = vrep.simxGetObjectHandle(clientID, "main", opmode)
+    while True:
+    
+        #keyboard "5" 
+        if keyboard.is_pressed("5"):
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,1,opmode)
+        
+        #keyboard "space" 
+        if keyboard.is_pressed("space"):
+            vrep.simxSetJointTargetVelocity(clientID,SP5_handle,0,opmode)
+        #keyboard "O" 
+        if keyboard.is_pressed("O"):
+            vrep.simxSetJointTargetVelocity(clientID,S1_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S2_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S3_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S4_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S5_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S6_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S7_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S8_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S9_1_handle,100,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,S10_1_handle,100,opmode)
+        #keyboard "W" 
+        if keyboard.is_pressed("W"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,2,opmode)
+         #keyboard "E" 
+        if keyboard.is_pressed("E"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,0,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,0,opmode)   
+        #keyboard "S" 
+        if keyboard.is_pressed("S"):
+            vrep.simxSetJointTargetVelocity(clientID,C1_handle,-1,opmode)
+            vrep.simxSetJointTargetVelocity(clientID,B1_handle,-2,opmode)
+        #keyboard "Z" 
+        if keyboard.is_pressed("Z"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,1000,opmode)
+       #keyboard "X" 
+        if keyboard.is_pressed("X"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,0,opmode)
+        #keyboard "C" 
+        if keyboard.is_pressed("C"):
+            vrep.simxSetJointTargetVelocity(clientID,DOOR_handle,-1.5,opmode)              
+        #keyboard "esc" 
+        if  keyboard.is_pressed("esc"):
+            vrep.simxStopSimulation(clientID, opmode)
+            break
+        
+else:
+    print ('Failed connecting to remote API server')
+    print ('End')</pre>
+<p>---------</p>
+<p><span class="style-scope yt-formatted-string" dir="auto">影片場景之ttt檔及其他相關檔案，可至本人的個人倉儲下載:</span></p>
+<p><span class="style-scope yt-formatted-string" dir="auto"></span><a class="yt-simple-endpoint style-scope yt-formatted-string" dir="auto" href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqbEg0QXBfOGFVaURiaGJ3ZGd5YThnTURPY2UwZ3xBQ3Jtc0trbXp5X2tKX3c4emdCU25zc3JyMmg3YkMweHFRTnY1WjdsaW1vS2cwLVEtVzNqV0hzcDdKNW9iM29GRXpBT3JvQVQwQXhudkhWU0ZRbTFSR2hsRjJKWWVTR2JTQy02YjBnZE5haEpUMko2dFIzTHZDOA&amp;q=https%3A%2F%2Fgithub.com%2F40823210%2Fcd2021" rel="nofollow" spellcheck="false" target="_blank">https://github.com/40823210/cd2021</a><span class="style-scope yt-formatted-string" dir="auto"></span></p>
+<p><span class="style-scope yt-formatted-string" dir="auto">(檔案位置:task2 ➝販賣機)</span></p>
+<br />S1-B18 << <a href='S1-B18.html'>Previous</a> <a href='直播影片.html'>Next</a> >> 直播影片</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
