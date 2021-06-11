@@ -1,4 +1,4 @@
-def stu2b(account):
+ddef stu2b(account):
     if account == "40823231":
         return account + "-2"
     elif account[0:3] == "407":
